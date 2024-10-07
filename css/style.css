@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 80px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.placeholder-image {
+    background-color: #6D747D;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+}
+
+.info {
+    padding: 80px 0;
+}
+
+.info-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.info-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.box {
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.info-item p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1F2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 80px 0;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.call-to-action {
+    padding: 80px 0;
+}
+
+.call-to-action .container {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-to-action h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.call-to-action .cta-button {
+    border: 2px solid #F9FAF8;
+}
+
+.posts {
+    flex: 1;
+    overflow-y: auto;
+    /* padding: 80px 0; */
+}
+
+#posts-container {
+    /*position: absolute;	
+    overflow: auto; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.posts-footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 20px 0;
+    text-align: center; 
+}
+
+.weather {
+    padding: 80px 0;
+}
+
+#weather-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.weather-card {
+    background-color: #F9FAF8;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1F2937;
+}
+
+footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 20px 0;
+    text-align: center;
+}
